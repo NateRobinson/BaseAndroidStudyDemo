@@ -2,6 +2,7 @@ package com.nate.baseandroidstudydemo.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import butterknife.ButterKnife;
@@ -10,7 +11,7 @@ import butterknife.ButterKnife;
  * Created by Nate on 2015/7/24.
  * 整个应用的基本Activity，用来规范代码结构和统一初始化一些数据
  */
-public abstract class BaseActivity extends Activity implements View.OnClickListener {
+public abstract class BaseActivity extends FragmentActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

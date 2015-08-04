@@ -21,6 +21,9 @@
         <activity
             android:name=".activity.lifecycle.DialogActivity"
             android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".activity.fragment.FragmentMainActivity"></activity>
+        <activity android:name=".activity.fragment.FragmentWithXmlActivity"></activity>
+        <activity android:name=".activity.fragment.FragmentWithCodeActivity"></activity>
     </application>
 
 </manifest>
