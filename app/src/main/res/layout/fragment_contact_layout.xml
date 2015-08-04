@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下面是一个装有Fragment的FrameLayout布局，点击点一个Fragment中的Button，告诉Activity需要切换Fragment啦，并且将参数传递过去，然后Activity中进行监听，然后让FragmentB执行操作"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"></FrameLayout>
+
+</LinearLayout>

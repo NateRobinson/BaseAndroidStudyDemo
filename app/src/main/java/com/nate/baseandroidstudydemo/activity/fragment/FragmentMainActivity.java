@@ -16,6 +16,8 @@ public class FragmentMainActivity extends BaseActivity {
     Button createByXml;
     @Bind(R.id.createByCode)
     Button createByCode;
+    @Bind(R.id.contact)
+    Button contact;
 
     @Override
     public void initContentLayout() {
@@ -26,6 +28,7 @@ public class FragmentMainActivity extends BaseActivity {
     public void initListener() {
         createByXml.setOnClickListener(this);
         createByCode.setOnClickListener(this);
+        contact.setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +46,10 @@ public class FragmentMainActivity extends BaseActivity {
                 break;
             case R.id.createByXml:
                 intent.setClass(this,FragmentWithXmlActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.contact:
+                intent.setClass(this,FragmentContactTestActivity.class);
                 startActivity(intent);
                 break;
             default:

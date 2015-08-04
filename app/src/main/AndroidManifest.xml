@@ -24,6 +24,7 @@
         <activity android:name=".activity.fragment.FragmentMainActivity"></activity>
         <activity android:name=".activity.fragment.FragmentWithXmlActivity"></activity>
         <activity android:name=".activity.fragment.FragmentWithCodeActivity"></activity>
+        <activity android:name=".activity.fragment.FragmentContactTestActivity"></activity>
     </application>
 
 </manifest>
