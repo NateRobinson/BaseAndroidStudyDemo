@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(1):初次进入页面会执行：onCreate()[瞬时的Created状态]->onStart()[瞬时的Started状态]->onResume()[保持的Resumed状态]"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/pauseAndResumeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="(2)暂停与恢复"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(2)点击“暂停与恢复”button，弹出Dialog，使Activity进入paused[暂停]状态，取消弹出框，Activity恢复resume状态"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/stopAndRestartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="(3)停止与重启"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(3)点击“停止与重启”button，此activity会变得不可见，并被放入到栈中，此时进入stoped状态，然后关闭新开的页面，刚才stop的页面会先进行onRestart()->onStart->onResume()重新恢复"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/destroyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="(4)销毁"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(4)点击“销毁”button，执行finish方法，执行销毁一个activity的操作，activity会执行onPause()->onStop()->onDestroy()"
+        android:textSize="14sp" />
+</LinearLayout>

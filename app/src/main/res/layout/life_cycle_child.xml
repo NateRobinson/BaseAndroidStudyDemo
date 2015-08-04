@@ -6,10 +6,10 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/activityLifeCycleBtn"
+        android:id="@+id/backBtn"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Activity生命周期测试"
+        android:text="finish当前Activity"
         android:textSize="16sp" />
 
 </LinearLayout>
