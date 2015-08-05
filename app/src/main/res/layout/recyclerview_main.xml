@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/listViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="实现ListView"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/gridViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="实现GridView"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -7,6 +7,8 @@ import android.widget.Toast;
 import com.nate.baseandroidstudydemo.R;
 import com.nate.baseandroidstudydemo.activity.fragment.FragmentMainActivity;
 import com.nate.baseandroidstudydemo.activity.lifecycle.LifeCycleActivity;
+import com.nate.baseandroidstudydemo.activity.recyclerview.RecyclerViewMain;
+import com.nate.baseandroidstudydemo.activity.sharedpreference.SharedPerferenceMainActivity;
 import com.nate.baseandroidstudydemo.base.BaseActivity;
 
 import butterknife.Bind;
@@ -19,6 +21,10 @@ public class MainActivity extends BaseActivity {
     Button activityLifeCycleBtn;
     @Bind(R.id.fragmentBtn)
     Button fragmentBtn;
+    @Bind(R.id.rvBtn)
+    Button rvBtn;
+    @Bind(R.id.sharedperferenceBtn)
+    Button sharedperferenceBtn;
 
     @Override
     public void initContentLayout() {
@@ -29,6 +35,8 @@ public class MainActivity extends BaseActivity {
     public void initListener() {
         activityLifeCycleBtn.setOnClickListener(this);
         fragmentBtn.setOnClickListener(this);
+        rvBtn.setOnClickListener(this);
+        sharedperferenceBtn.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +54,14 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.fragmentBtn:
                 intent.setClass(MainActivity.this, FragmentMainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.rvBtn:
+                intent.setClass(MainActivity.this, RecyclerViewMain.class);
+                startActivity(intent);
+                break;
+            case R.id.sharedperferenceBtn:
+                intent.setClass(MainActivity.this, SharedPerferenceMainActivity.class);
                 startActivity(intent);
                 break;
             default:

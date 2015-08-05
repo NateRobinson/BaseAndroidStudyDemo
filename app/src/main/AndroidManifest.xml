@@ -25,6 +25,10 @@
         <activity android:name=".activity.fragment.FragmentWithXmlActivity"></activity>
         <activity android:name=".activity.fragment.FragmentWithCodeActivity"></activity>
         <activity android:name=".activity.fragment.FragmentContactTestActivity"></activity>
+        <activity android:name=".activity.recyclerview.ListRecyclerViewActivity"></activity>
+        <activity android:name=".activity.recyclerview.RecyclerViewMain"></activity>
+        <activity android:name=".activity.recyclerview.GridRecyclerViewActivity"></activity>
+        <activity android:name=".activity.sharedpreference.SharedPerferenceMainActivity"></activity>
     </application>
 
 </manifest>
