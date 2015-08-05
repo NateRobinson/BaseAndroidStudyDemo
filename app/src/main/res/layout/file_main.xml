@@ -5,40 +5,38 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/inputDataEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入要保存到File中的值" />
+
     <Button
-        android:id="@+id/activityLifeCycleBtn"
+        android:id="@+id/saveBtn"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Activity生命周期测试"
+        android:layout_marginTop="8dp"
+        android:text="保存"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/showDataTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="这里将展示保存的值"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/fragmentBtn"
+        android:id="@+id/getDataBtn"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Fragment使用简介"
+        android:layout_marginTop="8dp"
+        android:text="获取"
         android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/rvBtn"
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="RecyleView使用"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/sharedperferenceBtn"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="SharedPerference使用"
-        android:textSize="16sp" />
-
-    <Button
-        android:id="@+id/fileSaveBtn"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="文件存储的使用"
-        android:textSize="16sp" />
-
-
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
 </LinearLayout>

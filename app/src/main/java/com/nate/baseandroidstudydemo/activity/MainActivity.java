@@ -8,6 +8,7 @@ import com.nate.baseandroidstudydemo.R;
 import com.nate.baseandroidstudydemo.activity.fragment.FragmentMainActivity;
 import com.nate.baseandroidstudydemo.activity.lifecycle.LifeCycleActivity;
 import com.nate.baseandroidstudydemo.activity.recyclerview.RecyclerViewMain;
+import com.nate.baseandroidstudydemo.activity.savetofile.SaveToFileActivity;
 import com.nate.baseandroidstudydemo.activity.sharedpreference.SharedPerferenceMainActivity;
 import com.nate.baseandroidstudydemo.base.BaseActivity;
 
@@ -25,6 +26,8 @@ public class MainActivity extends BaseActivity {
     Button rvBtn;
     @Bind(R.id.sharedperferenceBtn)
     Button sharedperferenceBtn;
+    @Bind(R.id.fileSaveBtn)
+    Button fileSaveBtn;
 
     @Override
     public void initContentLayout() {
@@ -37,6 +40,7 @@ public class MainActivity extends BaseActivity {
         fragmentBtn.setOnClickListener(this);
         rvBtn.setOnClickListener(this);
         sharedperferenceBtn.setOnClickListener(this);
+        fileSaveBtn.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +66,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.sharedperferenceBtn:
                 intent.setClass(MainActivity.this, SharedPerferenceMainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fileSaveBtn:
+                intent.setClass(MainActivity.this, SaveToFileActivity.class);
                 startActivity(intent);
                 break;
             default:

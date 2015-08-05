@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fileType">
+        <item>InternalStorage</item>
+        <item>ExternalStorage</item>
+    </string-array>
+</resources>
