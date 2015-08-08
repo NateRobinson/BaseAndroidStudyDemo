@@ -31,7 +31,6 @@ public class RecyclerViewMain extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override

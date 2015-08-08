@@ -74,7 +74,6 @@ public class SaveToFileActivity extends BaseActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-
     }
 
     @Override

@@ -30,7 +30,6 @@ public class ListRecyclerViewActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override

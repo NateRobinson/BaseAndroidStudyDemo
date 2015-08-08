@@ -27,7 +27,6 @@ public class LifeCyleChildActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override

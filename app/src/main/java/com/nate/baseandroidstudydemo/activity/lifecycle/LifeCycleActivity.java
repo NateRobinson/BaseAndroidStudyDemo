@@ -39,7 +39,6 @@ public class LifeCycleActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override

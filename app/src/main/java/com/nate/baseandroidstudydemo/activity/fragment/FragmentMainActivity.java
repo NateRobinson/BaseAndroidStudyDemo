@@ -33,7 +33,6 @@ public class FragmentMainActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override

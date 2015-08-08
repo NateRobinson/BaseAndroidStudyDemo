@@ -32,6 +32,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initContentLayout() {
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
     @Override
@@ -46,6 +47,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initData() {
         toast = Toast.makeText(MainActivity.this, "再按一次退出", Toast.LENGTH_SHORT);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
     @Override

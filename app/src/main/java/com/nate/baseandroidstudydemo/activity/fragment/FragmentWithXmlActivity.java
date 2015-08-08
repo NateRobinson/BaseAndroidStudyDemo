@@ -19,7 +19,6 @@ public class FragmentWithXmlActivity extends BaseActivity {
 
     @Override
     public void initData() {
-
     }
 
     @Override
