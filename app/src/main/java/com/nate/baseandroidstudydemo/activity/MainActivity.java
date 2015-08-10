@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import com.nate.baseandroidstudydemo.R;
 import com.nate.baseandroidstudydemo.activity.fragment.FragmentMainActivity;
+import com.nate.baseandroidstudydemo.activity.intent.IntentMainActivity;
 import com.nate.baseandroidstudydemo.activity.lifecycle.LifeCycleActivity;
 import com.nate.baseandroidstudydemo.activity.recyclerview.RecyclerViewMain;
 import com.nate.baseandroidstudydemo.activity.savetofile.SaveToFileActivity;
@@ -28,6 +29,8 @@ public class MainActivity extends BaseActivity {
     Button sharedperferenceBtn;
     @Bind(R.id.fileSaveBtn)
     Button fileSaveBtn;
+    @Bind(R.id.intentuseBtn)
+    Button intentuseBtn;
 
     @Override
     public void initContentLayout() {
@@ -42,6 +45,7 @@ public class MainActivity extends BaseActivity {
         rvBtn.setOnClickListener(this);
         sharedperferenceBtn.setOnClickListener(this);
         fileSaveBtn.setOnClickListener(this);
+        intentuseBtn.setOnClickListener(this);
     }
 
     @Override
@@ -72,6 +76,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.fileSaveBtn:
                 intent.setClass(MainActivity.this, SaveToFileActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.intentuseBtn:
+                intent.setClass(MainActivity.this, IntentMainActivity.class);
                 startActivity(intent);
                 break;
             default:

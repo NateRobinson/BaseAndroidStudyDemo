@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/implicitIntentForMapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="隐式的Intent打开百度地图"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/implicitIntentForEmailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="隐式的Intent发送邮件"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/openActWithResultBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="带返回结果的startActivity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:textSize="14sp"
+        android:text="这里将会显示返回的结果"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
