@@ -35,7 +35,9 @@
         <activity android:name=".activity.sharedpreference.SharedPerferenceMainActivity"></activity>
         <activity android:name=".activity.savetofile.SaveToFileActivity"></activity>
         <activity android:name=".activity.intent.IntentMainActivity"></activity>
-        <activity android:name=".activity.share.ShareActivity"></activity>
+        <activity android:name=".activity.share.ShareActivity"
+            android:theme="@style/MyTheme"
+            ></activity>
     </application>
 
 </manifest>

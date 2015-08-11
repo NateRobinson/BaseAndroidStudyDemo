@@ -4,7 +4,6 @@
 
     <item
         android:id="@+id/settings"
-        android:actionProviderClass="android.widget.ShareActionProvider"
         android:title="Setting"
         app:showAsAction="never" />
 
