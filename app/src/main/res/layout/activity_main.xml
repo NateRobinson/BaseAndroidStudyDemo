@@ -47,5 +47,12 @@
         android:text="Intent的使用"
         android:textSize="16sp" />
 
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="分享数据"
+        android:textSize="16sp" />
+
 
 </LinearLayout>
